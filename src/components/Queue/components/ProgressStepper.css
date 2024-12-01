@@ -1,0 +1,11 @@
+.MuiStepLabel-label {
+  font-size: 18px;
+  font-weight: 700 !important;
+}
+
+.MuiStepContent-root {
+  margin-left: 20px !important;
+}
+.MuiStepConnector-line {
+  margin-left: 8px !important;
+}

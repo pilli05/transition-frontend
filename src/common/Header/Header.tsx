@@ -16,7 +16,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="flex flex-col  lg:flex-row justify-between lg:items-center px-5 py-3">
+    <header className="flex flex-col  lg:flex-row justify-between lg:items-center px-5 py-3 sticky top-0 bg-white">
       <span className="hidden md:block text-[#8A8EA6] font-[500] text-base">
         Chat / Feed chat
       </span>

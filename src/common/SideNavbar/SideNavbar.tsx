@@ -6,7 +6,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const SideNavbar: React.FC = () => {
   return (
-    <div className="bg-[#0D1424] min-h-screen p-6 hidden md:block">
+    <div className="bg-[#0D1424] min-h-screen p-6 hidden md:block sticky top-0">
       <img src="../../../src/assets/logo.png" alt="logo" className="mb-5" />
 
       <ul>
@@ -20,7 +20,7 @@ const SideNavbar: React.FC = () => {
             }`}
           >
             <Link to={menu.link} className="flex items-center">
-              <img src={menu.icon} alt={menu.name} className="w-6 h-6 mr-3" />{" "}
+              <img src={menu.icon} alt={menu.name} className="w-6 h-6 mr-3 " />{" "}
               {menu.name}{" "}
               {menu.subLink && (
                 <MdOutlineKeyboardArrowRight

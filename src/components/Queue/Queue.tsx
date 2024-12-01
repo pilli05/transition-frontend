@@ -6,9 +6,9 @@ import Messages from "./components/Messages";
 
 const Queue: React.FC = () => {
   return (
-    <div className="bg-slate-100 min-h-screen p-5">
+    <div className="bg-slate-100 p-5">
       <ProfileTabs />
-      <div className="grid grid-cols-1 lg:grid-cols-3 my-5 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 my-5 gap-5 items-start">
         <ProfileDetails />
         <Conversation />
         <Messages />
