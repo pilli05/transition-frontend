@@ -1,6 +1,7 @@
 import React from "react";
 import { Profiles } from "../../constants/Profiles";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import Message from "../../assets/message.png";
 
 const ProfileTabs: React.FC = () => {
   return (
@@ -23,11 +24,7 @@ const ProfileTabs: React.FC = () => {
       ))}
       <div className="mr-5 px-3 py-5 rounded-lg bg-[#0F8BFD] flex items-center justify-between w-full">
         <span className="w-10 h-10 rounded-full flex items-center justify-center mr-1 text-[#4C6292] font-[700]">
-          <img
-            src="../../../src/assets/message.png"
-            alt="message"
-            className="mr-2 "
-          />
+          <img src={Message} alt="message" className="mr-2 " />
         </span>
         <span className="text-white font-[600] text-sm">Messaging</span>
         <MdOutlineKeyboardArrowRight
