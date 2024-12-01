@@ -3,6 +3,10 @@ import "./Header.css";
 import { RiMenu2Fill, RiMenu3Fill } from "react-icons/ri";
 import Drawer from "@mui/material/Drawer";
 import MobileSideNavbar from "../SideNavbar/MobileSideNavbar";
+import Home from "../../assets/home.png";
+import Profile from "../../assets/profile.png";
+import Settings from "../../assets/settings.png";
+import Logout from "../../assets/sign-out.png";
 
 const Header: React.FC = () => {
   const [rightDrawerOpen, setRightDrawerOpen] = useState(false);
@@ -49,12 +53,7 @@ const Header: React.FC = () => {
         >
           <ul className="flex flex-col items-start space-y-5 p-5">
             <li className="flex items-center text-sm text-[#8A8EA6]">
-              <img
-                src="../../../src/assets/home.png"
-                alt="home"
-                className="mr-2 w-7 h-7"
-              />{" "}
-              Home
+              <img src={Home} alt="home" className="mr-2 w-7 h-7" /> Home
             </li>
             <li className="bg-[#FCCC55] px-4 py-1 rounded-lg text-sm text-[#44486D]">
               Process Owner HOD
@@ -63,28 +62,15 @@ const Header: React.FC = () => {
               Admin
             </li>
             <li className="text-sm text-[#8A8EA6] flex items-center">
-              <img
-                src="../../../src/assets/profile.png"
-                alt="profile"
-                className="mr-2"
-              />
+              <img src={Profile} alt="profile" className="mr-2" />
               Palak Bansal
             </li>
             <li className="flex items-center text-sm text-[#8A8EA6]">
-              <img
-                src="../../../src/assets/settings.png"
-                alt="settings"
-                className="mr-2 w-7 h-7"
-              />{" "}
+              <img src={Settings} alt="settings" className="mr-2 w-7 h-7" />{" "}
               Settings
             </li>
             <li className="flex items-center text-[#8A8EA6] font-[500]">
-              <img
-                src="../../../src/assets/sign-out.png"
-                alt="logout"
-                className="mr-3"
-              />{" "}
-              Logout
+              <img src={Logout} alt="logout" className="mr-3" /> Logout
             </li>
           </ul>
         </Drawer>
@@ -92,7 +78,7 @@ const Header: React.FC = () => {
       <div className="hidden md:block">
         <ul className="flex  items-center space-x-4">
           <li>
-            <img src="../../../src/assets/home.png" alt="home" />
+            <img src={Home} alt="home" />
           </li>
           <li className="bg-[#FCCC55] px-4 py-1 rounded-lg text-sm text-[#44486D]">
             Process Owner HOD
@@ -102,18 +88,13 @@ const Header: React.FC = () => {
           </li>
           <li className="text-sm text-[#8A8EA6]">Palak Bansal</li>
           <li>
-            <img src="../../../src/assets/profile.png" alt="profile" />
+            <img src={Profile} alt="profile" />
           </li>
           <li>
-            <img src="../../../src/assets/settings.png" alt="settings" />
+            <img src={Settings} alt="settings" />
           </li>
           <li className="flex items-center text-[#8A8EA6] font-[500]">
-            <img
-              src="../../../src/assets/sign-out.png"
-              alt="logout"
-              className="mr-3"
-            />{" "}
-            Logout
+            <img src={Logout} alt="logout" className="mr-3" /> Logout
           </li>
         </ul>
       </div>

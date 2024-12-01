@@ -6,6 +6,7 @@ import StepLabel from "@mui/material/StepLabel";
 import StepContent from "@mui/material/StepContent";
 import Typography from "@mui/material/Typography";
 import "./ProgressStepper.css";
+import Tick from "../../../assets/tick.png";
 
 const steps = [
   {
@@ -51,12 +52,7 @@ const ProgressStepper: React.FC = () => {
               {step.label}
               <br />
               <span className="text-[#8A8EA6] mt-2 text-xs font-normal flex items-center">
-                {step.date}{" "}
-                <img
-                  src="../../../src/assets/tick.png"
-                  alt="message"
-                  className="ml-1"
-                />
+                {step.date} <img src={Tick} alt="message" className="ml-1" />
               </span>
             </StepLabel>
             <StepContent>

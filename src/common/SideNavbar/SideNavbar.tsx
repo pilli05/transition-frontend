@@ -3,11 +3,12 @@ import "./SideNavbar.css";
 import { MenuList } from "../../constants/MenuList";
 import { Link } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import Logo from "../../assets/logo.png";
 
 const SideNavbar: React.FC = () => {
   return (
     <div className="bg-[#0D1424] min-h-screen p-6 hidden md:block sticky top-0">
-      <img src="../../../src/assets/logo.png" alt="logo" className="mb-5" />
+      <img src={Logo} alt="logo" className="mb-5" />
 
       <ul>
         {MenuList.map((menu) => (
