@@ -35,11 +35,11 @@ const Conversation: React.FC = () => {
   const [value, setValue] = React.useState(0);
   const [innerValue, setInnerValue] = React.useState(0);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (_: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
 
-  const handleInnerChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleInnerChange = (_: React.SyntheticEvent, newValue: number) => {
     setInnerValue(newValue);
   };
 
